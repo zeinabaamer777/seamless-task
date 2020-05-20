@@ -1,0 +1,84 @@
+@import "../shared/styles/global";
+header{
+    display: block;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    @media (max-width: 767px) {
+        padding: 0 0 180px;
+    }
+    h1{
+        font-weight: bolder;
+        color: $second-color;
+        text-shadow: 1px 0 $second-color;
+        letter-spacing:1px;
+    }
+    h3{
+        color: $second-color;
+        font-weight: 500;
+    }
+    .bg{
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        @media (max-width: 767px) {
+            background-position: right bottom;
+            height: 100vh;
+        }
+    }
+    .header-half-img{
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        @media (max-width: 767px) {
+            // top: -20%;
+            top: 65%;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin-top: 15%;
+            margin-left: 15%;
+            @media (max-width: 767px) {
+                margin-top: 5%;
+            }
+            // margin-top: 70px;
+            // height: 550px;
+        }
+    }
+    .header-half-text{
+        margin-top: 45%;
+        @media (max-width : 767px) {
+            margin-top: 18%;
+        }
+        .header-btn{
+            padding: 8px 25px;
+            border-radius: 25px;
+            border: none;
+            background: rgb(26,18,159);
+            background: linear-gradient(90deg, rgba(26,18,159,1) 0%, rgba(97,86,249,1) 100%, rgba(9,9,121,1) 100%);
+        }
+    }
+
+}
+.goto-down{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: 9999;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    @media (max-width : 767px) {
+        display: none;
+    }
+    a{
+        cursor: pointer;
+    }
+}

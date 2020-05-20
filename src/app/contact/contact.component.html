@@ -1,0 +1,17 @@
+<section id="contact" class="contact text-center" #contact>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 text-center">
+                <h3>Do you want to get <span>Special News?</span></h3>
+                <form #subscribeForm="ngForm" (ngSubmit)="Register()">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Drop Your Email"  required name="email" [(ngModel)]="model.email">
+                        <span class="input-group-btn ml-3">
+                            <input type="submit" class="btn app-btn" value="Subscribe">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

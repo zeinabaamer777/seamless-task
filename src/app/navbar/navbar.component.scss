@@ -1,0 +1,90 @@
+//  external style files
+@import '../shared/styles/global';
+.navbar{
+    transition: all .3s ease-in-out;
+    .nav-item{
+        padding:2px;
+        margin-left: 7px;
+        
+        a{
+            color: $white;
+            cursor: pointer;
+        }
+    }
+    .navbar-brand{
+        img{
+            width: 170px;
+            @media (max-width: 767px) {
+                content: url('src/assets/images/logo white.svg');
+            }
+        }
+    }
+    /* start navbar toggler animation */
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    &:focus {
+      outline: none;
+      background: transparent !important;
+    }
+    .icon-bar {
+      background: $white;
+      transform: rotate(0deg) translate(0px, 0px);
+      transition: ease all .2s;
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      + .icon-bar {
+        margin-top: 4px;
+      }
+    }
+  }
+  .navbar-toggler {
+    &:not(.collapsed) .icon-bar
+    {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 4px);
+        transition: ease all .2s;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transition: ease all .2s;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
+        transition: ease all .2s;
+      }
+    }
+  }
+
+    &.navbar-shrink{
+        background-color: $white;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+        .navbar-brand{
+            img{
+                @media (max-width: 767px) {
+                    content: url('src/assets/images/logo-desktop.svg');
+                }
+            }
+        }
+        .nav-item{
+            a{
+                color: $second-color;
+            }
+        }
+        /* start navbar toggler animation */
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+    &:focus {
+      outline: none;
+      background: transparent !important;
+    }
+    .icon-bar {
+      background: $second-color;
+    }
+  }
+
+    }
+}

@@ -1,0 +1,54 @@
+<section id="pricing" class="pricing text-center" #pricing>
+    <div class="container">
+        <h2 class="text-center text-capitalize">our pricing</h2>
+        <ngx-slick-carousel class="carousel" 
+        #slickModal="slick-carousel" 
+        [config]="slideConfig" 
+        (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)"
+        (afterChange)="afterChange($event)"
+        (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slideritem of sliderItems" class="slide">
+                <div class="card shadow-sm p-3 mb-5 bg-white">
+                    <div class="card-title">
+                        <h6 class="text-center">
+                        {{ slideritem.title }}
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            {{ slideritem.body }}
+                        </p>
+                        <h4> {{ slideritem.price }} </h4>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn app-btn">See Details</button>
+                    </div>
+                </div>
+            </div>
+        </ngx-slick-carousel>
+        <!-- <owl-carousel
+            [options]="customOptions"
+            [items]="sliderItems"
+            [carouselClasses]="['owl-carousel','owl-theme']">
+            <div class="item" *ngFor="let slideritem of sliderItems">
+                <div class="card shadow-sm p-3 mb-5 bg-white">
+                    <div class="card-title">
+                        <h6 class="text-center">
+                        {{ slideritem.title }}
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            {{ slideritem.body }}
+                        </p>
+                        <h4> {{ slideritem.price }} </h4>
+                    </div>
+                    <div class="card-footer text-center">
+                        <button class="btn app-btn">See Details</button>
+                    </div>
+                </div>
+            </div>
+        </owl-carousel> -->
+    </div>
+</section>

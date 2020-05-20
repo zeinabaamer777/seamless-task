@@ -1,0 +1,50 @@
+@import "../shared/styles/global";
+.services{
+    .services-content{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background-image: url("src/assets/images/services-bg.svg");
+        background-size: cover;
+        background-position: top;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    .card{
+        
+        border-radius: 16px;
+        width: 90%;
+        margin: auto;
+        border: none;
+        @media (min-width: 991px) {
+            max-height: 500px;
+            height: 360px;
+        }
+        .card-title{
+            color: $second-color;
+            text-align:  left;
+            text-transform: capitalize;
+            margin: 0;
+            h6{
+                margin: 20px 0;
+            }
+        }
+        .card-body{
+            padding: 0;
+            p{
+                font-size: 15px;
+            }
+        }
+        .card-footer{
+            background-color:transparent;
+            border-top: none; 
+        
+        }
+        .card-icon{
+            img{
+                height: 60px;
+            }
+        }
+    }    
+}

@@ -1,0 +1,31 @@
+<section class="services" id="services" #services>
+    <div class="container">
+      <h2 class="text-left text-capitalize">what we offer</h2>
+    </div>
+      <div class="services-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4" *ngFor="let offer of offers">
+              <div class="card shadow-sm p-3 mb-5 bg-white">
+                <div class="card-icon text-center mb-3">
+                    <img src= '{{offer.icon}}'>
+                </div>
+                <div class="card-title">
+                    <h6>
+                      {{ offer.title }}
+                    </h6>
+                </div>
+                <div class="card-body">
+                      <p>
+                        {{ offer.description }}
+                      </p>
+                </div>
+                <div class="card-footer text-right">
+                    <button class="btn app-btn">SEE MORE</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>

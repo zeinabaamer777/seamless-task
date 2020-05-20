@@ -1,0 +1,84 @@
+@import "../shared/styles/global";
+.pricing{
+    background-color: $light-primary;   
+}
+h4{
+    font-weight: 900;
+    margin: 25px 0;
+    color: rgba($primary-color, .8) ;
+}
+.card{        
+    border-radius: 16px;
+    width: 90%;
+    margin: auto;
+    border: none;
+    @media (min-width: 991px) {
+        max-height: 500px;
+        height: 360px;
+    }
+    .card-title{
+        color: $second-color;
+        text-align:  left;
+        text-transform: capitalize;
+        margin: 0;
+        h6{
+            margin: 20px 0;
+        }
+    }
+    .card-body{
+        padding: 0;
+        p{
+            font-size: 15px;
+        }
+    }
+    .card-footer{
+        background-color:transparent;
+        border-top: none; 
+    
+    }
+    .card-icon{
+        img{
+            height: 60px;
+        }
+    }
+}
+
+
+
+
+
+    .owl-theme.owl-carousel {
+        .owl-dots {
+            .owl-dot {
+                span{
+                    background: transparent;
+                    border-color: #7E76F9;
+                }
+                &.active{
+                    span{
+                        background: #7E76F9;
+                    }
+                }
+            }
+        }
+    }
+    ::ng-deep {
+        .owl-theme {
+            .owl-dots {
+                .owl-dot {
+                    span {
+                        background: transparent !important;
+                        border:1px solid #7E76F9 !important; /* dots color*/
+                        transition: all .3s ease-in-out;
+                      }
+                      &.active,&:hover{
+                        span{
+                            width: 12px;
+                            height: 12px;
+                            background: #7E76F9 !important;
+                        }
+                      }
+                }
+            }
+        }
+    }

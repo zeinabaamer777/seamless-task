@@ -1,0 +1,62 @@
+@import "../shared/styles/global";
+.footer{
+    background-image: url("src/assets/images/footer-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $white;
+    padding: 120px 0 100px;
+    @media (max-width: 767px) {
+        background-position: bottom;
+        padding-bottom: 0;
+    }
+    .footer-content{
+        position: relative;
+        padding: 100px 0 10px;
+        
+        .get-in{
+            padding: 50px 0;
+            text-align: center;
+            @media (max-width: 767px) {
+                text-align: left;
+            }
+        }
+    }
+    h2{
+        color: $white;
+        letter-spacing: 2px;
+    }
+    h4{
+        letter-spacing: 2px;
+        // font-weight: 600;
+        margin-bottom: 30px;
+    }
+    p{
+        color: $white;
+    }
+    ul{
+        padding: 0;
+        h4{
+          color: $white
+        }
+        li{
+            list-style: none;
+            padding: 5px 0;
+            a{
+                color: $white;
+            }
+
+        }
+        &.socialize{
+            li{
+                display: inline-block;
+                padding: 10px;
+              }
+        }
+        
+      }
+      .hours-hidden{
+          @media (max-width: 767px) {
+              display: none;
+          }
+      }
+}
