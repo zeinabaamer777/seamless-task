@@ -14,10 +14,26 @@ export class DataService {
   ];
 
   sliderItems = [
-    {id: 1,isactive: false, title : "Gold Package",   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit", price : "$ 140"},
-    {id: 2,isactive: false, title: "Platinum Package",body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus.", price: "$ 240"},
-    {id:3 ,isactive: false,title: "Silver Package"  ,body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit", price: "$ 240"},
-    {id:4, isactive: false,title : "Gold Package_1",   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit", price : "$ 140"},
+    {
+      title : "Gold Package",
+      body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit", 
+      price : "$ 140"
+    },
+    {
+      title: "Platinum Package",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus.", 
+      price: "$ 240"
+    },
+    {
+      title: "Silver Package",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit", 
+      price: "$ 240"
+    },
+    {
+      title: "Platinum Package",
+      body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. Integer elementum at nisi pharetra convallis. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vel iaculis dui.",
+      price:"$140"
+    }
   ]
 
   constructor() { }

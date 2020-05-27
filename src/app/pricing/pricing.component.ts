@@ -14,15 +14,31 @@ export class PricingComponent implements OnInit {
   ngOnInit() {
     this.sliderItems = this.dataService.getsliderItems(); 
   }
+  // slideConfig = {
+  //   "slidesToShow": 3,
+  //   "slidesToScroll": 1,
+  //   "dots": true,
+  //   "centerMode": true,
+  //   "focusOnSelect": true,
+  //   "arrows":false,
+  //   responsive: [
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         "slidesToShow": 1,
+  //         "slidesToScroll": 1,
+  //       }
+  //     }
+  //   ]
+  // };
   slideConfig = {
     "slidesToShow": 3,
     "slidesToScroll": 1,
     "dots": true,
-    "infinite": true,
+    "centerMode": true,
+    "focusOnSelect": true,
+    "arrows":false,
     "autoplay": true,
-    "autoplaySpeed": 1500,
-    'arrows': false,
-    focusOnSelect: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -31,9 +47,10 @@ export class PricingComponent implements OnInit {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 2,
+          "slidesToShow": 1,
+          "slidesToScroll": 1,
         }
       },
       {
