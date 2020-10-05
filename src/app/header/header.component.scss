@@ -21,9 +21,11 @@ header{
         height: 100vh;
         position: relative;
         z-index: 1;
-        background-size: cover;
+        // background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: left bottom;
+        // background-position: left bottom;
+        background-position: right;
         @media (max-width: 767px) {
             background-position: right bottom;
             height: 100vh;
@@ -67,18 +69,80 @@ header{
     }
 
 }
-.goto-down{
+// .toBottom {
+//   position: relative;
+//   display: block;
+//   overflow: hidden;
+//   animation-name: bounce-2;
+//   animation-timing-function: ease;
+// }
+
+.toBottom{
     position: absolute;
-    left: 50%;
+    left: 40%;
     bottom: 0;
     z-index: 9999;
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    // margin: auto;
+    // -ms-transform: translateX(-50%);
+    // -webkit-transform: translateX(-50%);
+    // transform: translateX(-50%);
     @media (max-width : 767px) {
         display: none;
     }
     a{
         cursor: pointer;
     }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }

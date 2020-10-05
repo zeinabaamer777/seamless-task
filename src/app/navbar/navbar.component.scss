@@ -62,6 +62,7 @@
   &.navbar-shrink{
       background-color: $white;
       box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+      transition: all 0.3s ease-in-out;
       .navbar-nav{
           @media(max-width: 767px){
               background: transparent;
